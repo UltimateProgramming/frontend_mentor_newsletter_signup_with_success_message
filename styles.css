@@ -221,5 +221,6 @@ button[disabled] {
     grid-template-rows: auto auto;
     border-radius: unset;
     height: 100%;
+    padding: 2rem;
   }
 }
