@@ -58,10 +58,23 @@
                 oninput="applyErrorWhenWrongEmailPattern(this)"
               />
             </div>
-            <button id="subscribe">Subscribe to monthly newsletter</button>
+            <button id="subscribe" type="button" disabled onclick="onSubscribeClick()">Subscribe to monthly newsletter</button>
           </form>
         </div>
         <div class="image"></div>
+      </div>
+      <div class="success-card">
+        <div class="success-text">
+          <img src="./assets/images/icon-success.svg" alt="icon-success" />
+          <h1>Thanks for subscribing!</h1>
+          <p>
+            A confirmation email has been sent to <strong> {email}</strong>. Please open it and
+            click the button inside to confirm your subscription.
+          </p>
+        </div>
+        <div class="success-button">
+          <button>Dismiss message</button>
+        </div>
       </div>
       <div class="attribution">
         Challenge by
